@@ -1,0 +1,192 @@
+@media (min-width: 576px){
+    .service{
+        padding: 220px 20px 50px;
+        height: 540px;
+    }
+    .content{
+        .heading{
+            font-size: 32px;
+            line-height: 42px;
+            &_md{
+                font-size: 32px;
+                line-height: 42px;
+            }
+            &_xl{
+                font-size: 50px;
+                line-height: 56px;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .header{
+        .navbar-brand{
+            padding-top: 70px;
+            padding-left: 100px;
+        }
+    }
+    .service{
+        padding: 50px 40px 50px 300px;
+        background-position: 50px center;
+
+        height: auto;
+
+        &_stend{
+            background-position: 50px center;
+        }
+        &_panel{
+            background-position: 40px center;
+        }
+        &_promo{
+            background-position: 60px center;
+        }
+        &_led{
+            background-position: 50px center;
+        }
+
+        &__title{
+            font-size: 24px;
+        }
+    }
+    .form-content{
+        &_border{
+            padding: 35px;
+        }
+        &_btn-out{
+            padding-bottom: 50px;
+        }
+        margin-bottom: 50px;
+        .heading{
+            & + .offer_column{
+                margin-top: 30px;
+            }
+        }
+        .form_column{
+            .btn{
+                bottom: -85px;
+            }
+        }
+    }
+    .btn{
+        font-size: 16px;
+    }
+}
+@media (min-width: 992px){
+    .header{
+        .navbar-brand{
+            padding-top: 50px;
+            padding-left: 0px;
+        }
+        .nav-item{
+            margin-top: 0px;
+        }
+        &__contact{
+            display: block;
+        }
+    }
+    .content{
+        padding: 100px 0;
+        .margin-bottom{
+            margin-bottom: 70px;
+        }
+        .heading{
+            font-size: 52px;
+            line-height: 58px;
+            &_md{
+                font-size: 42px;
+                line-height: 48px;
+            }
+            &_xl{
+                font-size: 60px;
+                line-height: 66px;
+            }
+        }
+    }
+    .bg-dark{
+        .service{
+            height: 300px;
+        }
+    }
+    .service {
+        height: 240px;
+        background-position: 30px center;
+        background-size: 100px;
+        padding: 30px 40px 30px 150px;
+    }
+    .contact{
+        .form-content {
+            margin-bottom: 0px;
+        }
+    }
+    .form-content{
+        margin-bottom: 0;
+    }
+    .footer{
+        .navbar-nav {
+            margin: 0 auto;
+            .nav-link {
+                padding-right: .5rem;
+                padding-left: .5rem;
+            }
+        }
+    }
+}
+@media (min-width: 1400px){
+    .header{
+        .navbar-brand{
+            padding-top: 70px;
+            padding-left: 100px;
+        }
+    }
+    .bg-dark{
+        .service{
+            height: 280px;
+        }
+    }
+    .content{
+        .heading{
+            font-size: 52px;
+            line-height: 58px;
+            &_md{
+                font-size: 42px;
+                line-height: 48px;
+            }
+            &_xl{
+                font-size: 60px;
+                line-height: 66px;
+            }
+        }
+        .margin-bottom-xl-none{
+            margin-bottom: 0;
+        }
+    }
+    .form-content{
+        .heading{
+            & + .offer_row{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .service {
+        // height: 280px;
+        background-position: 30px center;
+        background-size: 200px;
+        padding: 50px 40px 50px 300px;
+        &_stend{
+            background-size:180px;
+            background-position: 40px 30px;
+        }
+        &_panel{
+            background-size:200px;
+            background-position: 10px 0px;
+        }
+        &_promo{
+            background-size:180px;
+            background-position: 40px 40px;
+        }
+        &_led{
+            background-position: 40px 60px;
+            background-size:180px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+html(lang="ru", dir="ltr")
+    include chunks/head.pug
+    body.index
+        script(src="./js/jquery.min.js")
+        script(src="./js/util.js")
+        script(src="./js/collapse.js")
+        script(src="./js/app.min.js")
+        include chunks/header.pug
+
+        section.content.content_heading
+            .container
+                .row
+                    .col-xl-7.col-lg-8
+                        h1.heading.heading_xl Вывеска за 4 дня по&nbsp;цене производителя
+        section.content
+            .container
+                .row.justify-content-xl-between.justify-content-lg-center
+                    .col-xl-7.margin-bottom.margin-bottom-xl-none
+                        .row
+                            h2.heading.heading_md.text-uppercase.col-xl-7.margin-bottom Лучший выбор для вас
+                        .list.row
+                            .list__item.col-xl-6.col-md-6
+                                .list__title Сделаем за 4 дня
+                                .list__offer рассчитаем проекта за 15 минут, изготовим и установим стандартную вывеску за четыре дня
+                            .list__item.col-xl-6.col-md-6
+                                .list__title Минимальная цена
+                                .list__offer собственное производство позволяет гарантировать низкие цены
+                            .list__item.col-xl-6.col-md-6
+                                .list__title Выезд замерщика 0 руб.
+                                .list__offer специалист приедет в удобное время и произведет все необходимы замеры и расчет.
+                            .list__item.col-xl-6.col-md-6
+                                .list__title Поможем сэкономить
+                                .list__offer оценим место, подскажем какую конструкцию лучше использовать и на чем можно сэкономить
+                            .list__item.col-xl-6.col-md-6
+                                .list__title Комитет архитектуры
+                                .list__offer проекты соответствуют регламенту, а значит проходят согласования с комитетом с 1 раза
+                            .list__item.col-xl-6.col-md-6
+                                .list__title Гарантия 1 год
+                                .list__offer производим только качественную продукцию и подтверждаем это наличием гарантии
+                    .col-xl-4.col-lg-8
+                        .form-content.form-content_border.form-content_btn-out
+                            .heading.heading_lg.text-uppercase Для всех новых клиентов
+                            .offer.offer_column.small Оставьте заявку и 
+                                span.text-lightblue.text-bold получите скидку 10% и бесплатный макет проекта 
+                                | - 2 бонуса, чтобы вам было еще приятнее начать с нами сотрудничать
+                            form.form.form_column(action="")
+                                .form__label Контактный телефон*
+                                input.form__input(type="tel" placeholder="+7 (   )    -   -  ")
+                                button.btn.btn_border(type="submit") Получить 2 бонуса
+        section.content.bg-dark
+            .container
+                h2.heading.heading_md.text-uppercase.margin-bottom Вывески для фасадных решений
+                .row
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service
+                            .service__title СВЕТОВЫЕ КОРОБА
+                            .service__offer Короб любой формы с помещенными внутрь лампами. На него наносится название организации, логотип или любое изображение. Используется как для установки на улице: для салонов, кафе, барбершопов и т.д.; так и внутри помещений.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service
+                            .service__title ОБЪЕМНЫЕ БУКВЫ
+                            .service__offer Отдельно стоящие буквы с подсветкой с разных сторон: с лицевой, боковой, задней или комбинированный вариант. Подчеркивает солидность и имидж компании. Применяется в сфере красоты, медицины, общепитов и развлечений.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service
+                            .service__title НЕОНОВЫЕ ВЫВЕСКИ
+                            .service__offer Вывеска с открытым неоном, в которой световые трубки не закрыты. Позволяет создавать объемные буквы разных размеров и видов.  Смотрится свежо и необысно. Подходит для большинства сфер бизнеса: бары, парикмахерские, магазины, аптеки.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service
+                            .service__title ПИЛОНЫ И СТЕЛЫ
+                            .service__offer Стела - обособленно стоящая конструкция, оборудованная или не оборудованная подсветкой. Несмотря на то, что она занимает немного места, она очень информативна.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service.margin-bottom-xl-none
+                            .service__title КРЫШНЫЕ УСТАНОВКИ
+                            .service__offer Крепится на крышах коммерческих зданий, сооружений, офисов и жилых домов, и является эффективной имиджевой составляющей, мотивирующей покупателей.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service.last
+                            .service__title КОЗЫРЬКИ, МАРКИЗЫ, НАВЕСЫ
+                            .service__offer Универсальная мобильная входная конструкция с вывеской, декорирована световыми элементами. Выполняется в общей стилистике фасадной группы.
+        section.content
+            .container
+                h2.heading.heading_md.text-uppercase.margin-bottom Вывески для интерьерных решений
+                .row
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service.service_stend
+                            .service__title СТЕНДЫ ИНФОРМАЦИИ
+                            .service__offer Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service.service_panel
+                            .service__title СВЕТОВЫЕ ПАНЕЛИ
+                            .service__offer Световые панели —тонкие короба, которые используются для размещения информации внутри помещения. Широко применяются в витринных секциях торговых помещений.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service.service_promo.margin-bottom-xl-none
+                            .service__title ПРОМОСТОЙКИ
+                            .service__offer Это конструкции для демонстрации продукции и размещения различной информации. Предназначаются пиара и продажи товаров.
+                    .col-xl-6.col-lg-6.col-md-12.col-sm-6
+                        .service.service_led.last
+                            .service__title НЕОНОВАЯ ПОДСВЕТКА
+                            .service__offer Украшает интерьер, подчеркивая его уникальность. Благодаря правильно расставленному свету, обстановка преображается и становится более объемной.
+        section.content.contact
+            .container
+                .row.justify-content-between
+                    .col-xl-7.col-lg-6
+                        .form-content.form-content_border.form-content_size
+                            .row.align-items-center.justify-content-between
+                                .col-xl-6
+                                    .heading.heading_md.text-uppercase Получите лучшее предложение
+                                    .offer.offer_row.small по производству, доставке и монтажу рекламной конcтрукции
+                                .col-xl-5
+                                    form.form.form_row(action="")
+                                        .form__label Контактный телефон*
+                                        input.form__input(type="tel" placeholder="+7 (   )    -   -  ")
+                                        button.btn.btn_border(type="submit") отправить заявку
+                    .col-xl-4.col-lg-5
+                        p.heading.heading_md.text-uppercase Контакты
+                        .address 
+                            .address__title.text-bold Наш адрес:
+                            .address__place г. Москва, Проектируемый проезд, 3683 д.4
+                            .address__title Номер телефона:
+                            a.address__phone(href="tel:+7 495 233-08-27") +7 495 233-08-27
+                            .address__title E-mail:
+                            a.address__mail(href="mailto:mail@frontbox.ru") mail@frontbox.ru
+        include chunks/footer.pug
