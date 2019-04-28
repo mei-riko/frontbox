@@ -17,6 +17,17 @@
             }
         }
     }
+    .index{
+        .content_heading{
+            padding-top: 200px;
+            .heading{
+                &_xl {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+            }
+        }
+    }
 }
 @media (min-width: 768px){
     .header{
@@ -27,22 +38,9 @@
     }
     .service{
         padding: 50px 40px 50px 300px;
-        background-position: 50px center;
+        background-position: 20px center;
 
         height: auto;
-
-        &_stend{
-            background-position: 50px center;
-        }
-        &_panel{
-            background-position: 40px center;
-        }
-        &_promo{
-            background-position: 60px center;
-        }
-        &_led{
-            background-position: 50px center;
-        }
 
         &__title{
             font-size: 24px;
@@ -69,6 +67,19 @@
     }
     .btn{
         font-size: 16px;
+    }
+    .index{
+        .content_heading{
+            .heading{
+                &_xl {
+                    font-size: 42px;
+                    line-height: 56px;
+                }
+                .line + .line{
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 @media (min-width: 992px){
@@ -109,9 +120,12 @@
     }
     .service {
         height: 240px;
-        background-position: 30px center;
-        background-size: 100px;
+        background-position: -10px center;
+        background-size: 160px;
         padding: 30px 40px 30px 150px;
+        &_promo{
+            background-position: -5px center;
+        }
     }
     .contact{
         .form-content {
@@ -152,8 +166,8 @@
                 line-height: 48px;
             }
             &_xl{
-                font-size: 60px;
-                line-height: 66px;
+                font-size: 56px;
+                line-height: 62px;
             }
         }
         .margin-bottom-xl-none{
@@ -168,25 +182,41 @@
         }
     }
     .service {
-        // height: 280px;
-        background-position: 30px center;
-        background-size: 200px;
+        background-position: 0 0;
+        background-size: 300px;
         padding: 50px 40px 50px 300px;
-        &_stend{
-            background-size:180px;
-            background-position: 40px 30px;
-        }
         &_panel{
-            background-size:200px;
-            background-position: 10px 0px;
+            background-position: -10px -10px;
         }
-        &_promo{
-            background-size:180px;
-            background-position: 40px 40px;
+        &_lightbox{
+            background-position: 0 20px;
         }
-        &_led{
-            background-position: 40px 60px;
-            background-size:180px;
+        &_letter{
+            background-position: 0 20px;
+        }
+        &_neon{
+            background-position: 0 10px;
+        }
+        &_pilon{
+            background-position: -20px 5px;
+            background-size: 320px;
+        }
+    }
+
+    .index{
+        .content_heading{
+            padding-top: 350px;
+            .heading{
+                line-height: 72px;
+                &__line{  
+                    & + .heading__line{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &:after{
+                width: calc( 1365px + (100% - 1380px)/2 );
+            }
         }
     }
 }

@@ -72,6 +72,9 @@ body{
 }
 .content{
     padding: 50px 0;
+    .margin-top{
+        margin-top: 35px;
+    }
     .margin-bottom{
         margin-bottom: 35px;
     }
@@ -120,11 +123,11 @@ body{
 }
 .service{
     background-color: #f0f1f3;
-    padding: 220px 40px 50px 40px;
+    padding: 200px 40px 50px 40px;
 
     background-image: url(../images/pilon.png);
     background-position: left 0px;
-    background-size: 150px;
+    background-size: 250px;
     background-repeat: no-repeat;
 
     margin-bottom: 30px;
@@ -132,26 +135,41 @@ body{
         margin-bottom: 0px;
     }
 
+    &_lightbox{
+        background-image: url(../images/lightbox.png);
+    }
+    &_letter{
+        background-image: url(../images/letter.png);
+        background-position-x: -40px;
+    }
+    &_neon{
+        background-image: url(../images/neon.png);
+        background-position-x: -20px;
+    }
+    &_pilon{
+        background-image: url(../images/pilon.png);
+        background-position-x: -40px;
+    }
+    &_roof{
+        background-image: url(../images/roof.png);
+    }
+    &_canopy{
+        background-image: url(../images/canopy.png);
+    }
     &_stend{
         background-image: url(../images/stend.png);
-        background-size:180px;
-        background-position: 40px 30px;
     }
     &_panel{
         background-image: url(../images/light-panel.png);
-        background-size:200px;
-        background-position: 10px 0px;
     }
     &_promo{
         background-image: url(../images/promo.png);
-        background-size:180px;
-        background-position: 40px 40px;
     }
     &_led{
         background-image: url(../images/led-lenta.png);
-        background-position: 40px 60px;
-        background-size:180px;
+        background-position-x: -20px;
     }
+
     &__title{
         font-size: 18px;
         font-weight: 700;
@@ -169,7 +187,6 @@ body{
         color: $grey;
     }
 }
-
 .contact{
     &.content{
         padding-top: 0;
@@ -178,7 +195,6 @@ body{
         margin-bottom: 50px;
     }
 }
-
 .list{
     &__item{
         margin-bottom: 35px;
@@ -208,7 +224,6 @@ body{
         line-height: 1.375;
     }
 }
-
 .form-content{
     .heading{
         & + .offer_column{
@@ -305,19 +320,38 @@ body{
 
 /* Index Page */
 .index{
-    .header{
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
     .content_heading{
-        padding-top: 310px;
-        padding-bottom: 210px;
-        background-color: $blue;
-        background-image: linear-gradient( 0deg, rgb(17,48,74) 0%, rgba(17,48,74,0) 100%);
+        position: relative;
+
+        padding-top: 150px;
+        padding-bottom:50px;
+        margin-bottom: 20px;
+
+        background: $blue url("../images/index-image.jpg") no-repeat center / cover;
         .heading{
-            color: $white;
+            color: $darkgrey;
+            &_xl {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            &__line{
+                display: inline-block;
+                background: $white;
+                padding: 0 10px;
+            }
+            .line + .line{
+                margin-top: 5px;
+            }
+        }
+        &:after{
+            content:'';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background: #f1f2f4;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
         }
     }
 }
