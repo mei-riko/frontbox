@@ -1,0 +1,25 @@
+.btn{
+    padding: 15px 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    background: inherit;
+    border: none;
+
+    transition: $transition-base;
+
+    &_border{
+        border: 3px solid $lightblue;
+        color: $lightblue;
+        background: $white;
+
+        &:hover{
+            background: darken($white, 3%);
+            border-color: darken($lightblue, 10%);
+            color: darken($lightblue, 10%);
+        }
+    }
+}

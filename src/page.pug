@@ -1,0 +1,162 @@
+html(lang="ru", dir="ltr")
+    include chunks/head.pug
+    body.inside-page
+        script(src="./js/jquery.min.js")
+        script(src="./js/util.js")
+        script(src="./js/collapse.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")
+        include chunks/header.pug
+
+        section.content.content_heading.text-white(style="background-image: url('../images/default-image-page.png')")
+            .container
+                .row
+                    .col-xl-9.col-lg-10
+                        h1.heading.text-uppercase Изготовление и монтаж  световых коробов за 96 часов
+                    .col-xl-7.col-lg-10                    
+                        p.offer.last Световой короб — ваша возможность выделиться в сером океане конкурентов. Световой короб — уникальная рекламная конструкция, выполняющая широкий спектр рекламных задач. Лайтбоксы подходят для помещений и улицы, не боятся погоды и привлекают взгляд в темноте.
+        section.content.content_small.bg-dark
+            .container
+                .row.justify-content-center
+                    .col-xl-3.col-lg-3.col-md-6
+                        p.text-white.text-uppercase.text-bold.lead Преимущества световых коробов
+                        .list.list_light.list_small
+                            .list__item
+                                .list__title Видимость 24/7
+                                .list__offer Благодаря яркой подсветке, лайтбокс заметен всегда
+                            .list__item
+                                .list__title Высокая устойчивость
+                                .list__offer Световые короба не восприимчивы к переменам температур и погоды
+                            .list__item.last
+                                .list__title Бюджетный вариант
+                                .list__offer Самый недорогой вид рекламной вывески
+                    .col-xl-3.col-lg-3.col-md-6
+                        p.text-white.text-uppercase.text-bold.lead Для кого подходит?
+                        p.offer.small.text-lightgrey Световые короба и лайтбоксы — один из самых эффективных видов наружной рекламы: всегда привлекательный и яркий. 
+                        p.offer.small.text-lightgrey Сегодня многие компании по предоставлению услуг и продаже товаров сделали свой выбор в пользу лайтбокса:
+                        .list.list_light.list_small
+                            .list__item
+                                .list__title кафе и рестораны
+                            .list__item
+                                .list__title аптеки и стоматологии
+                            .list__item.last
+                                .list__title магазины и торговые центры              
+                    .col-xl-4.col-lg-4.col-md-8
+                        .form-content.form-content_border.form-content_btn-out.bg-white
+                            .heading.heading_md.text-uppercase.text-center
+                                .text-lightblue бонусы 
+                                | для новых клиентов
+                            .offer.offer_column.small.text-center Оставьте заявку и 
+                                span.text-lightblue.text-bold получите скидку 10% и бесплатный макет проекта 
+                                | - 2 бонуса, чтобы вам было еще приятнее начать с нами сотрудничать
+                            form.form.form_column(action="")
+                                .form__label Контактный телефон*
+                                input.form__input.in-phone(type="tel" placeholder="+7 (   )    -   -  ")
+                                button.btn.btn_border(type="submit") Получить 2 бонуса
+        section.content.bg-light
+            .container
+                .row
+                    .col-xl-8.col-lg-12
+                        p.heading.heading_md.text-uppercase Примеры работ
+                        p.offer Световой короб — ваша возможность выделиться в сером океане конкурентов. Световой короб — уникальная рекламная конструкция, выполняющая широкий спектр рекламных задач. Лайтбоксы подходят для помещений и улицы, не боятся погоды и привлекают взгляд в темноте.
+                .row
+                    .col-xl-3.col-lg-3.col-md-6
+                        img.img-fluid.margin-bottom-sm(src="../images/img001.jpg")
+                        p.text-bold.lead.margin-bottom-xl-none 100 м2  /  999 руб.
+                    .col-xl-3.col-lg-3.col-md-6
+                        img.img-fluid.margin-bottom-sm(src="../images/img002.jpg")
+                        p.text-bold.lead.margin-bottom-xl-none 100 м2  /  999 руб.
+                    .col-xl-3.col-lg-3.col-md-6
+                        img.img-fluid.margin-bottom-sm(src="../images/img003.jpg")
+                        p.text-bold.lead.margin-bottom-xl-none 100 м2  /  999 руб.
+                    .col-xl-3.col-lg-3.col-md-6
+                        img.img-fluid.margin-bottom-sm(src="../images/img004.jpg")
+                        p.text-bold.lead.margin-bottom-xl-none 100 м2  /  999 руб.
+        section.content
+            .container
+                .row.justify-content-between
+                    .col-xl-12.col-lg-12
+                        h3.heading.heading_md.text-uppercase.margin-bottom Виды и стоимость 
+                            span.text-light световых коробов
+                    .col-xl-8.col-lg-12
+                        .service.service_price
+                            .service__img(style="background-image: url(../images/img001.jpg);")
+                            .service__title простой 
+                                span.text-light — 60 руб/см
+                            .service__offer Лицевая часть - молочное оргстекло с полноцветной печатью или аппликацией из светорассеивающей пленкой. Боковая часть - ПВХ 5-8 мм или алюминиевый профиль. Задняя часть - ПВХ 6 мм, на которую устанавливается подсветка из светодиодных модулей. 
+                        .service.service_price
+                            .service__img(style="background-image: url(../images/img002.jpg);")
+                            .service__title простой 
+                                span.text-light — 60 руб/см
+                            .service__offer Лицевая часть - молочное оргстекло с полноцветной печатью или аппликацией из светорассеивающей пленкой. Боковая часть - ПВХ 5-8 мм или алюминиевый профиль. Задняя часть - ПВХ 6 мм, на которую устанавливается подсветка из светодиодных модулей. 
+                        .service.service_price
+                            .service__img(style="background-image: url(../images/img003.jpg);")
+                            .service__title простой 
+                                span.text-light — 60 руб/см
+                            .service__offer Лицевая часть - молочное оргстекло с полноцветной печатью или аппликацией из светорассеивающей пленкой. Боковая часть - ПВХ 5-8 мм или алюминиевый профиль. Задняя часть - ПВХ 6 мм, на которую устанавливается подсветка из светодиодных модулей. 
+                    .col-xl-3.col-lg-12
+                        .list.list_small.row
+                            .list__item.col-xl-12.col-lg-4.col-md-6
+                                .list__title Сделаем за 4 дня
+                                .list__offer рассчитаем проекта за 15 минут, изготовим и установим стандартную вывеску за четыре дня
+                            .list__item.col-xl-12.col-lg-4.col-md-6
+                                .list__title Минимальная цена
+                                .list__offer собственное производство позволяет гарантировать низкие цены
+                            .list__item.col-xl-12.col-lg-4.col-md-6
+                                .list__title Выезд замерщика 0 руб.
+                                .list__offer специалист приедет в удобное время и произведет все необходимы замеры и расчет.
+                            .list__item.col-xl-12.col-lg-4.col-md-6
+                                .list__title Поможем сэкономить
+                                .list__offer оценим место, подскажем какую конструкцию лучше использовать и на чем можно сэкономить
+                            .list__item.col-xl-12.col-lg-4.col-md-6
+                                .list__title Комитет архитектуры
+                                .list__offer проекты соответствуют регламенту, а значит проходят согласования с комитетом с 1 раза
+                            .list__item.col-xl-12.col-lg-4.col-md-6
+                                .list__title Гарантия 1 год
+                                .list__offer производим только качественную продукцию и подтверждаем это наличием гарантии
+        section.content.bg-dark
+            .container
+                .row.justify-content-between.margin-bottom
+                    .col-xl-12.col-lg-12
+                        h3.heading.heading_md.text-uppercase Дизайн и монтаж 
+                    .col-xl-6.col-lg-6
+                        p.offer.margin-bottom-xl-none Привлекательный дизайн вывески - одно из основных маркетинговых инструентов для привлечения большого количества клиентов. Мы аанимаемся разработкой дизайна вывесок более 10 лет! На основе вашего корпоративного стиля создаем уникальный дизайн вывески, который будет нравится вашим клиентам.        
+                    .col-xl-6.col-lg-6
+                        p.offer.last Привлекательный дизайн вывески - одно из основных маркетинговых инструентов для привлечения большого количества клиентов. Мы аанимаемся разработкой дизайна вывесок более 10 лет! На основе вашего корпоративного стиля создаем уникальный дизайн вывески, который будет нравится вашим клиентам.        
+                .step.row
+                    .step__item.col-xl-3.col-lg-3.col-md-6
+                        .step__title Заявка на короб и согласование макета
+                        .step__number 01
+                    .step__item.col-xl-3.col-lg-3.col-md-6
+                        .step__title Заявка на короб и согласование макета
+                        .step__number 02
+                    .step__item.col-xl-3.col-lg-3.col-md-6
+                        .step__title Заявка на короб и согласование макета
+                        .step__number 03
+                    .step__item.col-xl-3.col-lg-3.col-md-6
+                        .step__title Заявка на короб и согласование макета
+                        .step__number 04
+        section.content
+            .container
+                .row.justify-content-between
+                    .col-xl-7.col-lg-6
+                        .form-content.form-content_border.form-content_size
+                            .row.align-items-center.justify-content-between
+                                .col-xl-6
+                                    .heading.heading_md.text-uppercase Получите лучшее предложение
+                                    .offer.offer_row.small по производству, доставке и&nbsp;монтажу рекламной конcтрукции
+                                .col-xl-5
+                                    form.form.form_row(action="")
+                                        .form__label Контактный телефон*
+                                        input.form__input(type="tel" placeholder="+7 (   )    -   -  ")
+                                        button.btn.btn_border(type="submit") отправить заявку
+                    .col-xl-4.col-lg-5
+                        p.heading.heading_md.text-uppercase Контакты
+                        .address 
+                            .address__title.text-bold Наш адрес:
+                            .address__place г. Москва, Проектируемый проезд, 3683 д.4
+                            .address__title Номер телефона:
+                            a.address__phone(href="tel:+7 495 233-08-27") +7 495 233-08-27
+                            .address__title E-mail:
+                            a.address__mail(href="mailto:mail@frontbox.ru") mail@frontbox.ru
+        include chunks/footer.pug

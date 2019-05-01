@@ -97,6 +97,9 @@
     }
     .content{
         padding: 100px 0;
+        &_small{
+            padding: 50px 0;
+        }
         .margin-bottom{
             margin-bottom: 70px;
         }

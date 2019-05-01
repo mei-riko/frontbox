@@ -39,17 +39,27 @@ a{
 .p-relative{position: relative;}
 .d-inline-block{display: inline-block;}
 
+.bg-white{background: $white;color:$black;}
+.bg-light{background: $bg-light;}
+
 .text-white{color: $white;}
 .text-black{color: $black;}
 .text-lightblue{color: $lightblue;}
+.text-lightgrey{color: #bec6cc;}
 
 .text-uppercase{text-transform: uppercase;}
 
 .text-bold{font-weight: 700;}
+.text-light{font-weight: 300;}
 
 .text-right{text-align: right;}
 .text-center{text-align: center;}
 .text-left{text-align: left;}
+
+p{margin-bottom: 30px;}
+.lead{font-size: 18px;}
+
+.img-fluid{max-width: 100%}
 
 .m-auto{margin: 0 auto;}
 
@@ -73,15 +83,21 @@ body{
 .content{
     padding: 50px 0;
     .margin-top{
-        margin-top: 35px;
+        margin-top: 30px;
     }
     .margin-bottom{
-        margin-bottom: 35px;
+        margin-bottom: 30px;
+        &-sm{
+            margin-bottom: 15px;
+        }
     }
     .heading{
         font-weight: 700;
         font-size: 24px;
         line-height: 32px;
+
+        margin-bottom: 30px;
+
         &_md{
             font-size: 24px;
             line-height: 32px;
@@ -98,6 +114,9 @@ body{
         &.small{
             font-size: 14px;
             line-height: 22px;
+        }
+        &.last{
+            margin-bottom: 0;
         }
     }
     .address{
@@ -121,72 +140,6 @@ body{
         }
     }
 }
-.service{
-    background-color: #f0f1f3;
-    padding: 200px 40px 50px 40px;
-
-    background-image: url(../images/pilon.png);
-    background-position: left 0px;
-    background-size: 250px;
-    background-repeat: no-repeat;
-
-    margin-bottom: 30px;
-    &.last{
-        margin-bottom: 0px;
-    }
-
-    &_lightbox{
-        background-image: url(../images/lightbox.png);
-    }
-    &_letter{
-        background-image: url(../images/letter.png);
-        background-position-x: -40px;
-    }
-    &_neon{
-        background-image: url(../images/neon.png);
-        background-position-x: -20px;
-    }
-    &_pilon{
-        background-image: url(../images/pilon.png);
-        background-position-x: -40px;
-    }
-    &_roof{
-        background-image: url(../images/roof.png);
-    }
-    &_canopy{
-        background-image: url(../images/canopy.png);
-    }
-    &_stend{
-        background-image: url(../images/stend.png);
-    }
-    &_panel{
-        background-image: url(../images/light-panel.png);
-    }
-    &_promo{
-        background-image: url(../images/promo.png);
-    }
-    &_led{
-        background-image: url(../images/led-lenta.png);
-        background-position-x: -20px;
-    }
-
-    &__title{
-        font-size: 18px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $blue;
-        margin-bottom: 20px;
-        &:hover{
-            color: $lightblue;
-            text-decoration: none;
-        }
-    }
-    &__offer{
-        font-size: 14px;
-        line-height: 20px;
-        color: $grey;
-    }
-}
 .contact{
     &.content{
         padding-top: 0;
@@ -195,166 +148,37 @@ body{
         margin-bottom: 50px;
     }
 }
-.list{
+
+
+.step{
+    margin: 0;
     &__item{
-        margin-bottom: 35px;
-    }
-    &__title{
-        position: relative;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 26px;
-        color: $lightblue;
-        margin-bottom: 20px;
-        padding-left: 30px;
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            top: 6px;
-            left: 0;
-            background: $lightblue;
-            width: 16px;
-            height: 16px;
+        border: 1px solid $white;
+        padding: 30px;
+        transition: .3s;
+        & + .step__item{
+            border-left: none;
         }
-    }
-    &__offer{
-        font-size: 16px;
-        color: rgb(0, 9, 16);
-        line-height: 1.375;
-    }
-}
-.form-content{
-    .heading{
-        & + .offer_column{
-            margin-top: 20px;
-        }
-        & + .offer_row{
-            margin-top: 15px;
-            margin-bottom: 30px;
-            width: 250px;
-            max-width: 100%;
-        }
-    }
-    &_border{
-        padding: 20px;
-        padding-bottom: 35px;
-        border: 14px solid $lightblue;
-    }
-    &_size{
-        width: 850px;
-        max-width: 100%;
-    }
-    .form_column{
-        margin-top: 30px;
-        .form__input{
-            width: 100%;
-        }
-        .btn{
-            width: 100%;
-            position: absolute;
-            bottom: -70px;
-        }
-    }
-    .form_row{
-        .form__input{
-            width: 100%;
-        }
-        .btn{
-            width: 100%;
-        }
-    }
-}
-.form{
-    position: relative;
-    margin-bottom: 0;
-    &__label{
-        font-size: 14px;
-        color: $lightgrey;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-    &__input{
-        border:1px solid $blue;
-        padding: 15px 20px;
-        &::placeholder{
-            color: $lightgrey;
-        }
-        &:focus{
-            &::placeholder{
-                opacity: 0;
-            }
-        }
-
-        & + .btn{
-            margin-top: 30px;
-        }
-    }
-}
-.btn{
-    padding: 15px 20px;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    background: inherit;
-    border: none;
-
-    transition: $transition-base;
-
-    &_border{
-        border: 3px solid $lightblue;
-        color: $lightblue;
-        background: $white;
 
         &:hover{
-            background: darken($white, 3%);
-            border-color: darken($lightblue, 10%);
-            color: darken($lightblue, 10%);
+            background: $blue;
         }
+    }
+    &__title{
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    &__number{
+        font-weight: 700;
     }
 }
 
-/* Index Page */
-.index{
-    .content_heading{
-        position: relative;
+@import "form.scss";
+@import "button.scss";
+@import "list.scss";
+@import "service.scss";
 
-        padding-top: 150px;
-        padding-bottom:50px;
-        margin-bottom: 20px;
-
-        background: $blue url("../images/index-image.jpg") no-repeat center / cover;
-        .heading{
-            color: $darkgrey;
-            &_xl {
-                font-size: 18px;
-                line-height: 26px;
-            }
-            &__line{
-                display: inline-block;
-                background: $white;
-                padding: 0 10px;
-            }
-            .line + .line{
-                margin-top: 5px;
-            }
-        }
-        &:after{
-            content:'';
-            display: block;
-            height: 20px;
-            width: 100%;
-            background: #f1f2f4;
-            position: absolute;
-            bottom: -20px;
-            left: 0;
-        }
-    }
-}
-
+@import "index.scss";
+@import "page.scss";
 
 @import "media.scss";

@@ -1,0 +1,76 @@
+.service{
+    background-color: #f0f1f3;
+    padding: 200px 40px 50px 40px;
+
+    background-image: url(../images/pilon.png);
+    background-position: left 0px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+    &.last{
+        margin-bottom: 0px;
+    }
+
+    &_lightbox{
+        background-image: url(../images/lightbox.png);
+    }
+    &_letter{
+        background-image: url(../images/letter.png);
+        background-position-x: -40px;
+    }
+    &_neon{
+        background-image: url(../images/neon.png);
+        background-position-x: -20px;
+    }
+    &_pilon{
+        background-image: url(../images/pilon.png);
+        background-position-x: -40px;
+    }
+    &_roof{
+        background-image: url(../images/roof.png);
+    }
+    &_canopy{
+        background-image: url(../images/canopy.png);
+    }
+    &_stend{
+        background-image: url(../images/stend.png);
+    }
+    &_panel{
+        background-image: url(../images/light-panel.png);
+    }
+    &_promo{
+        background-image: url(../images/promo.png);
+    }
+    &_led{
+        background-image: url(../images/led-lenta.png);
+        background-position-x: -20px;
+    }
+    &_price{
+        position: relative;
+        background-image: none;
+        .service__img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 270px;
+
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__title{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $blue;
+        margin-bottom: 20px;
+    }
+    &__offer{
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey;
+    }
+}

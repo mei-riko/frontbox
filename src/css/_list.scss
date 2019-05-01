@@ -1,0 +1,51 @@
+.list{
+    &__item{
+        margin-bottom: 35px;
+    }
+    &__title{
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $lightblue;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            background: $lightblue;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &__offer{
+        font-size: 16px;
+        color: rgb(0, 9, 16);
+        line-height: 1.375;
+    }
+
+    &_light{
+        .list__offer{
+            color:#bec6cc;
+        }
+    }
+    &_small{
+        .list__item {
+            margin-bottom: 30px;
+        }
+        .list__title{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .list__offer{
+            font-size:14px;
+            line-height: 22px;
+
+            width: 400px;
+            max-width: 100%;
+        }
+    }
+}
