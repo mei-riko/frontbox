@@ -52,6 +52,7 @@
     &__input{
         border:1px solid $blue;
         padding: 15px 20px;
+        line-height: 18px;
         &::placeholder{
             color: $lightgrey;
         }
@@ -65,4 +66,24 @@
             margin-top: 30px;
         }
     }
+    &__fileinput{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+        & + .form__filelabel{
+            @extend .btn;
+            @extend .btn_primary;
+
+            cursor: pointer;
+
+            * {
+                pointer-events: none;
+            }
+        }
+    }
+    
 }

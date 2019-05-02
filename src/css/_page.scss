@@ -18,9 +18,45 @@
         }
     }
     .content{
-        
         .form-content_btn-out{
-            margin-top: -170px;
+            margin-top: 30px;
+            margin-bottom: -60px;
+        }
+    }
+}
+
+.slider-service{
+    padding: 0 50px;
+    background: darken($color: #f0f1f3, $amount: 5%);
+    .service{
+        margin-bottom: 0;
+        .service__title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .slick-prev{
+        left: 15px;
+        z-index: 11;
+    }
+    .slick-next{
+        right: 15px;
+        z-index: 11;
+    }
+    .slick-prev:before, .slick-next:before{
+        color: $blue;
+    }
+}
+
+@media(min-width: 1400px){
+    .inside-page{
+        .content{
+            &_heading{
+                padding: 150px 0;
+            }
+            .form-content_btn-out{
+                margin-top: -170px;
+            }
         }
     }
 }

@@ -2,6 +2,11 @@
     .service{
         padding: 220px 20px 50px;
         height: 540px;
+
+        &_price{
+            height: auto;
+            padding: 30px;
+        }
     }
     .content{
         .heading{
@@ -45,6 +50,12 @@
         &__title{
             font-size: 24px;
         }
+
+        &_price{
+            .service__img{
+                display: block;
+            }
+        }
     }
     .form-content{
         &_border{
@@ -79,6 +90,16 @@
                     margin-top: 10px;
                 }
             }
+        }
+    }
+
+    .step{
+        &__item + .step__item_2{
+            border-top: 1px solid $white;
+            border-left: none;
+        }
+        &__item + .step__item_4{
+            border-left: none;
         }
     }
 }
@@ -129,6 +150,10 @@
         &_promo{
             background-position: -5px center;
         }
+
+        &_price{
+            padding-left: 300px;
+        }
     }
     .contact{
         .form-content {
@@ -145,6 +170,12 @@
                 padding-right: .5rem;
                 padding-left: .5rem;
             }
+        }
+    }
+    .step{
+        &__item + .step__item{
+            border-top: 1px solid $white;
+            border-left: none;
         }
     }
 }
@@ -188,6 +219,12 @@
         background-position: 0 0;
         background-size: 300px;
         padding: 50px 40px 50px 300px;
+
+        &.slick-slide{
+            padding: 30px 40px 30px 300px;
+            background-position: 0 0;
+        }
+
         &_panel{
             background-position: -10px -10px;
         }
@@ -204,6 +241,12 @@
             background-position: -20px 5px;
             background-size: 320px;
         }
+        &_price{
+            .service__img{
+                width: 270px;
+            }
+        }
+    
     }
 
     .index{

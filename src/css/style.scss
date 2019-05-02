@@ -38,6 +38,7 @@ a{
 }
 .p-relative{position: relative;}
 .d-inline-block{display: inline-block;}
+.d-block{display: block;}
 
 .bg-white{background: $white;color:$black;}
 .bg-light{background: $bg-light;}
@@ -77,6 +78,15 @@ body{
         }
         &__offer{
             color: $lightgrey;
+        }
+    }
+    a.service{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            .service__title{
+                color: $lightblue;
+            }
         }
     }
 }
@@ -148,8 +158,6 @@ body{
         margin-bottom: 50px;
     }
 }
-
-
 .step{
     margin: 0;
     &__item{
@@ -157,7 +165,7 @@ body{
         padding: 30px;
         transition: .3s;
         & + .step__item{
-            border-left: none;
+            border-top: none;
         }
 
         &:hover{

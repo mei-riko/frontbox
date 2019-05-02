@@ -5,6 +5,7 @@
 
     font-size: 14px;
     font-weight: 700;
+    line-height: 20px;
 
     background: inherit;
     border: none;
@@ -16,10 +17,20 @@
         color: $lightblue;
         background: $white;
 
+        line-height: 14px;
+
         &:hover{
             background: darken($white, 3%);
             border-color: darken($lightblue, 10%);
             color: darken($lightblue, 10%);
+        }
+    }
+    &_primary{
+        color: $white;
+        background: $lightblue;
+
+        &:hover{
+            background: darken($lightblue, 8%);
         }
     }
 }

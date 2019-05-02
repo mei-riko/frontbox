@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Frontbox</title>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <link href="./css/slick.css" rel="stylesheet"/>
     <link href="./css/style.min.css" rel="stylesheet"/>
   </head>
   <body class="inside-page">
@@ -12,6 +14,7 @@
     <script src="./js/util.js"></script>
     <script src="./js/collapse.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/app.min.js"></script>
     <header class="header">
       <div class="container">
@@ -63,8 +66,8 @@
     </section>
     <section class="content content_small bg-dark">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-3 col-md-6">
+        <div class="row justify-content-between">
+          <div class="col-xl-3 col-lg-6 col-md-6">
             <p class="text-white text-uppercase text-bold lead">Преимущества световых коробов</p>
             <div class="list list_light list_small">
               <div class="list__item">
@@ -81,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="col-xl-3 col-lg-6 col-md-6">
             <p class="text-white text-uppercase text-bold lead">Для кого подходит?</p>
             <p class="offer small text-lightgrey">Световые короба и лайтбоксы — один из самых эффективных видов наружной рекламы: всегда привлекательный и яркий. </p>
             <p class="offer small text-lightgrey">Сегодня многие компании по предоставлению услуг и продаже товаров сделали свой выбор в пользу лайтбокса:</p>
@@ -97,7 +100,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-8">
+          <div class="col-xl-4 col-lg-8 col-md-8">
             <div class="form-content form-content_border form-content_btn-out bg-white">
               <div class="heading heading_md text-uppercase text-center">
                 <div class="text-lightblue">бонусы </div>для новых клиентов
@@ -205,19 +208,19 @@
           </div>
         </div>
         <div class="step row">
-          <div class="step__item col-xl-3 col-lg-3 col-md-6">
+          <div class="step__item step__item_1 col-xl-3 col-lg-3 col-md-6">
             <div class="step__title">Заявка на короб и согласование макета</div>
             <div class="step__number">01</div>
           </div>
-          <div class="step__item col-xl-3 col-lg-3 col-md-6">
+          <div class="step__item step__item_2 col-xl-3 col-lg-3 col-md-6">
             <div class="step__title">Заявка на короб и согласование макета</div>
             <div class="step__number">02</div>
           </div>
-          <div class="step__item col-xl-3 col-lg-3 col-md-6">
+          <div class="step__item step__item_3 col-xl-3 col-lg-3 col-md-6">
             <div class="step__title">Заявка на короб и согласование макета</div>
             <div class="step__number">03</div>
           </div>
-          <div class="step__item col-xl-3 col-lg-3 col-md-6">
+          <div class="step__item step__item_4 col-xl-3 col-lg-3 col-md-6">
             <div class="step__title">Заявка на короб и согласование макета</div>
             <div class="step__number">04</div>
           </div>
@@ -226,25 +229,28 @@
     </section>
     <section class="content">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-xl-7 col-lg-6">
-            <div class="form-content form-content_border form-content_size">
-              <div class="row align-items-center justify-content-between">
-                <div class="col-xl-6">
-                  <div class="heading heading_md text-uppercase">Получите лучшее предложение</div>
-                  <div class="offer offer_row small">по производству, доставке и&nbsp;монтажу рекламной конcтрукции</div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-xl-8 col-lg-8">
+            <div class="form-content form-content_border">
+              <div class="heading heading_md text-uppercase">Узнайте, сколько стоит изготовление вашего проекта!</div>
+              <p class="offer small">Загрузите файл с&nbsp;дизайн-проектом и&nbsp;мы&nbsp;рассчитаем стоимость за&nbsp;15 минут</p>
+              <form class="form form_row row" action="">
+                <div class="col-xl-4">
+                  <div class="fileupload">
+                    <input class="form__fileinput inputfile" type="file" name="file" id="file" data-multiple-caption="{count} files selected"/>
+                    <label class="form__filelabel text-center" for="file"><span>загрузить файл</span></label>
+                  </div>
                 </div>
-                <div class="col-xl-5">
-                  <form class="form form_row" action="">
-                    <div class="form__label">Контактный телефон*</div>
-                    <input class="form__input" type="tel" placeholder="+7 (   )    -   -  "/>
-                    <button class="btn btn_border" type="submit">отправить заявку</button>
-                  </form>
+                <div class="col-xl-4">
+                  <input class="form__input" type="email" placeholder="Ваш контактный e-mail"/>
                 </div>
-              </div>
+                <div class="col-xl-4">
+                  <button class="btn btn_border" type="submit">узнать стоимость</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-5">
+          <div class="col-xl-3 col-lg-4">
             <p class="heading heading_md text-uppercase">Контакты</p>
             <div class="address"> 
               <div class="address__title text-bold">Наш адрес:</div>
@@ -252,6 +258,24 @@
               <div class="address__title">Номер телефона:</div><a class="address__phone" href="tel:+7 495 233-08-27">+7 495 233-08-27</a>
               <div class="address__title">E-mail:</div><a class="address__mail" href="mailto:mail@frontbox.ru">mail@frontbox.ru</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content content_small contact">
+      <div class="container">
+        <div class="slider-service" id="service">
+          <div class="service service_stend">
+            <div class="service__title">СТЕНДЫ ИНФОРМАЦИИ</div>
+            <div class="service__offer">Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель</div>
+          </div>
+          <div class="service service_stend">
+            <div class="service__title">СТЕНДЫ ИНФОРМАЦИИ</div>
+            <div class="service__offer">Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель</div>
+          </div>
+          <div class="service service_stend">
+            <div class="service__title">СТЕНДЫ ИНФОРМАЦИИ</div>
+            <div class="service__offer">Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель</div>
           </div>
         </div>
       </div>

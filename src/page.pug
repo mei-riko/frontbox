@@ -5,6 +5,7 @@ html(lang="ru", dir="ltr")
         script(src="./js/util.js")
         script(src="./js/collapse.js")
         script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
         script(src="./js/app.min.js")
         include chunks/header.pug
 
@@ -17,8 +18,8 @@ html(lang="ru", dir="ltr")
                         p.offer.last Световой короб — ваша возможность выделиться в сером океане конкурентов. Световой короб — уникальная рекламная конструкция, выполняющая широкий спектр рекламных задач. Лайтбоксы подходят для помещений и улицы, не боятся погоды и привлекают взгляд в темноте.
         section.content.content_small.bg-dark
             .container
-                .row.justify-content-center
-                    .col-xl-3.col-lg-3.col-md-6
+                .row.justify-content-between
+                    .col-xl-3.col-lg-6.col-md-6
                         p.text-white.text-uppercase.text-bold.lead Преимущества световых коробов
                         .list.list_light.list_small
                             .list__item
@@ -30,7 +31,7 @@ html(lang="ru", dir="ltr")
                             .list__item.last
                                 .list__title Бюджетный вариант
                                 .list__offer Самый недорогой вид рекламной вывески
-                    .col-xl-3.col-lg-3.col-md-6
+                    .col-xl-3.col-lg-6.col-md-6
                         p.text-white.text-uppercase.text-bold.lead Для кого подходит?
                         p.offer.small.text-lightgrey Световые короба и лайтбоксы — один из самых эффективных видов наружной рекламы: всегда привлекательный и яркий. 
                         p.offer.small.text-lightgrey Сегодня многие компании по предоставлению услуг и продаже товаров сделали свой выбор в пользу лайтбокса:
@@ -41,7 +42,7 @@ html(lang="ru", dir="ltr")
                                 .list__title аптеки и стоматологии
                             .list__item.last
                                 .list__title магазины и торговые центры              
-                    .col-xl-4.col-lg-4.col-md-8
+                    .col-xl-4.col-lg-8.col-md-8
                         .form-content.form-content_border.form-content_btn-out.bg-white
                             .heading.heading_md.text-uppercase.text-center
                                 .text-lightblue бонусы 
@@ -124,33 +125,36 @@ html(lang="ru", dir="ltr")
                     .col-xl-6.col-lg-6
                         p.offer.last Привлекательный дизайн вывески - одно из основных маркетинговых инструентов для привлечения большого количества клиентов. Мы аанимаемся разработкой дизайна вывесок более 10 лет! На основе вашего корпоративного стиля создаем уникальный дизайн вывески, который будет нравится вашим клиентам.        
                 .step.row
-                    .step__item.col-xl-3.col-lg-3.col-md-6
+                    .step__item.step__item_1.col-xl-3.col-lg-3.col-md-6
                         .step__title Заявка на короб и согласование макета
                         .step__number 01
-                    .step__item.col-xl-3.col-lg-3.col-md-6
+                    .step__item.step__item_2.col-xl-3.col-lg-3.col-md-6
                         .step__title Заявка на короб и согласование макета
                         .step__number 02
-                    .step__item.col-xl-3.col-lg-3.col-md-6
+                    .step__item.step__item_3.col-xl-3.col-lg-3.col-md-6
                         .step__title Заявка на короб и согласование макета
                         .step__number 03
-                    .step__item.col-xl-3.col-lg-3.col-md-6
+                    .step__item.step__item_4.col-xl-3.col-lg-3.col-md-6
                         .step__title Заявка на короб и согласование макета
                         .step__number 04
         section.content
             .container
-                .row.justify-content-between
-                    .col-xl-7.col-lg-6
-                        .form-content.form-content_border.form-content_size
-                            .row.align-items-center.justify-content-between
-                                .col-xl-6
-                                    .heading.heading_md.text-uppercase Получите лучшее предложение
-                                    .offer.offer_row.small по производству, доставке и&nbsp;монтажу рекламной конcтрукции
-                                .col-xl-5
-                                    form.form.form_row(action="")
-                                        .form__label Контактный телефон*
-                                        input.form__input(type="tel" placeholder="+7 (   )    -   -  ")
-                                        button.btn.btn_border(type="submit") отправить заявку
-                    .col-xl-4.col-lg-5
+                .row.justify-content-between.align-items-center
+                    .col-xl-8.col-lg-8
+                        .form-content.form-content_border
+                            .heading.heading_md.text-uppercase Узнайте, сколько стоит изготовление вашего проекта!
+                            p.offer.small Загрузите файл с&nbsp;дизайн-проектом и&nbsp;мы&nbsp;рассчитаем стоимость за&nbsp;15 минут
+                            form.form.form_row.row(action="")
+                                .col-xl-4
+                                    .fileupload
+                                        input.form__fileinput.inputfile(type="file" name="file" id="file" data-multiple-caption="{count} files selected")
+                                        label.form__filelabel.text-center(for="file")
+                                            span загрузить файл
+                                .col-xl-4
+                                    input.form__input(type="email" placeholder="Ваш контактный e-mail")
+                                .col-xl-4
+                                    button.btn.btn_border(type="submit") узнать стоимость
+                    .col-xl-3.col-lg-4
                         p.heading.heading_md.text-uppercase Контакты
                         .address 
                             .address__title.text-bold Наш адрес:
@@ -159,4 +163,17 @@ html(lang="ru", dir="ltr")
                             a.address__phone(href="tel:+7 495 233-08-27") +7 495 233-08-27
                             .address__title E-mail:
                             a.address__mail(href="mailto:mail@frontbox.ru") mail@frontbox.ru
+        section.content.content_small.contact
+            .container
+                .slider-service#service
+                    .service.service_stend
+                        .service__title СТЕНДЫ ИНФОРМАЦИИ
+                        .service__offer Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель
+                    .service.service_stend
+                        .service__title СТЕНДЫ ИНФОРМАЦИИ
+                        .service__offer Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель
+                    .service.service_stend
+                        .service__title СТЕНДЫ ИНФОРМАЦИИ
+                        .service__offer Информационные стенды – щиты, расположенные на напольном покрытии или стенах. Сегодня это наиболее долговечный рекламный и информационный носитель
+
         include chunks/footer.pug

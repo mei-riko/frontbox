@@ -49,7 +49,13 @@
     &_price{
         position: relative;
         background-image: none;
+
+        height: auto;
+        padding: 30px;
+        
         .service__img{
+            display: none;
+
             position: absolute;
             left: 0;
             top: 0;
@@ -72,5 +78,19 @@
         font-size: 14px;
         line-height: 20px;
         color: $grey;
+    }
+}
+
+a.service{
+    text-decoration: none;
+    transition: .3s;
+    .service__title{
+        transition: .3s;
+    }
+    &:hover{
+        text-decoration: none;
+        .service__title{
+            color: $lightblue;
+        }
     }
 }
