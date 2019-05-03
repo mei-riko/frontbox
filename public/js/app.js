@@ -109,12 +109,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
     (0, _jquery2.default)('#service').slick({
         speed: 300,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         arrows: true,
         dots: false,
         infinite: true,
         responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }, {
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,

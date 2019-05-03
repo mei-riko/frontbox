@@ -47,11 +47,14 @@
         background-position-x: -20px;
     }
     &_price{
+        margin: 30px 0 0;
         position: relative;
         background-image: none;
 
+        border-bottom: 10px solid #62adec;
+
         height: auto;
-        padding: 30px;
+        padding: 15px 30px;
         
         .service__img{
             display: none;
@@ -65,6 +68,9 @@
             background-position: center;
             background-size: cover;
         }
+        .service__title{
+            font-size: 18px;
+        }
     }
 
     &__title{
@@ -73,6 +79,9 @@
         text-transform: uppercase;
         color: $blue;
         margin-bottom: 20px;
+        span.text-light{
+            white-space: nowrap;
+        }
     }
     &__offer{
         font-size: 14px;

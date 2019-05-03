@@ -1,4 +1,6 @@
 .form-content{
+    margin-bottom: 50px;
+
     .heading{
         & + .offer_column{
             margin-top: 20px;
@@ -61,10 +63,6 @@
                 opacity: 0;
             }
         }
-
-        & + .btn{
-            margin-top: 30px;
-        }
     }
     &__fileinput{
         width: 0.1px;
@@ -75,9 +73,11 @@
         z-index: -1;
 
         & + .form__filelabel{
+            
             @extend .btn;
             @extend .btn_primary;
 
+            margin-top: 0!important;
             cursor: pointer;
 
             * {
@@ -85,5 +85,7 @@
             }
         }
     }
-    
+    .btn{
+        margin-top: 30px;
+    }
 }

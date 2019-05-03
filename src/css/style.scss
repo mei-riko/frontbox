@@ -164,7 +164,10 @@ body{
         border: 1px solid $white;
         padding: 30px;
         transition: .3s;
-        & + .step__item{
+        & + .step__item_3{
+            border-top: none;
+        }
+        & + .step__item_4{
             border-top: none;
         }
 
@@ -177,6 +180,7 @@ body{
         margin-bottom: 15px;
     }
     &__number{
+        font-size: 42px;
         font-weight: 700;
     }
 }
